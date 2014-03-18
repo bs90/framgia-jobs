@@ -184,8 +184,8 @@ Framgia luôn muốn được cộng tác với những kỹ sư có tinh thần
       </div></a>    
     <div class="team-cols">
           <div class="inner">
-            <img src="/assets/member/member_fujimoto.jpg" alt="" data-team-name="Kazunari" data-team-job="CEO"  data-team-country="'Framgia luôn đón chờ những kỹ sư sẵn sàng nỗ lực nâng cao trình độ tới làm việc.'" class="before" />
-            <img src="/assets/member/member_fujimoto2.jpg" alt="" class="welcome" />
+            <%= image_tag "member/member_fujimoto.jpg", "data-team-name" => "Kazunari", "data-team-job" => "CEO", "data-team-country" => "'Framgia luôn đón chờ những kỹ sư sẵn sàng nỗ lực nâng cao trình độ tới làm việc.'", class: "before" %>
+            <%= image_tag "member/member_fujimoto2.jpg", alt: "", class: "welcome" %>
             <div class="hover-content"></div>
           </div>
     </div>
@@ -793,7 +793,6 @@ Thực hiện usability testing để liện tục nâng cấp sản phẩm.</p>
 <div id="positions-box">  
 </div>
 <!-- /POSITIONS -->
-<%= javascript_include_tag "jquery.royalslider.min", "data-turbolinks-track" => true %>
 <script>
 
 $(".royalSlider").royalSlider({
