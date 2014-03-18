@@ -1,6 +1,9 @@
 FramgiaJobs::Application.routes.draw do
   devise_for :admins
-  root to: "top#index"
+  require Rails.root.join("config", "static_pages.rb")
+  root to: "static_pages#show", file_name: "home"
+  get ":file_name" => "static_pages#show", as: :static_pages,
+    constraints: {file_name: StaticPages.matcher}
   namespace :admin do
     root to: "entries#index"
     resources :entries, except: [:new, :create]
