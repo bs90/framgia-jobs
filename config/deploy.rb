@@ -55,6 +55,7 @@ namespace :deploy do
   end
 
   before :restart, :create_symlink
+  before "assets:precompile", :create_symlink
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
