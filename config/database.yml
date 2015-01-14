@@ -10,8 +10,8 @@ development:
   database: framgia-jobs_development
   pool: 5
   username: root
-  password: "123456"
-  socket: /var/run/mysqld/mysqld.sock
+  password: 
+  socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,8 +23,8 @@ test:
   database: framgia-jobs_development
   pool: 5
   username: root
-  password: "123456"
-  socket: /var/run/mysqld/mysqld.sock
+  password: 
+  socket: /var/lib/mysql/mysql.sock
 
 production:
   adapter: mysql2

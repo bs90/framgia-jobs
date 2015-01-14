@@ -6,10 +6,14 @@ class EntriesController < ApplicationController
 
   def create
     if @entry.save
-      redirect_to root_path
+      UserMailer.send_email(@entry).deliver
+      redirect_to entries_finish_path
     else
       render :new
     end
+  end
+
+  def finish
   end
 
   private

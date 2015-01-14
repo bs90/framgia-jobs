@@ -6,6 +6,8 @@ FramgiaJobs::Application.routes.draw do
     resources :entries, except: [:new, :create]
   end
   resources :entries, only: [:new, :create]
+  resource :recruits, only: [:show]
+  get "/entries/finish", to: "entries#finish"
   get "*a", to: "application#render_404"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

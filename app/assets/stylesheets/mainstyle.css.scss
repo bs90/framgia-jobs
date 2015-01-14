@@ -4299,8 +4299,8 @@ button.btn, input[type="submit"].btn {
 .modal-footer {
     padding: 14px 15px 15px;
     margin-bottom: 0;
-    text-align: right;
-    background-color: #f5f5f5;
+    text-align: center;
+    // background-color: #f5f5f5;
     border-top: 1px solid #ddd;
     -webkit-border-radius: 0 0 6px 6px;
     -moz-border-radius: 0 0 6px 6px;
@@ -4333,7 +4333,12 @@ button.btn, input[type="submit"].btn {
     .modal-footer .btn-block + .btn-block {
         margin-left: 0;
     }
-
+.modal-footer .btn.btn-alt{
+	line-height:42px;
+	width:260px;
+	font-size:16px;
+	text-transform:uppercase;
+	}
 .tooltip {
     position: absolute;
     z-index: 1030;
@@ -6312,6 +6317,8 @@ body {
     padding: 0;
     margin: 0;
 }
+h1#img-logo-box {
+  padding-top: 5px; }
 
     #img-logo-box span {
         font-size: 14px;
@@ -14178,7 +14185,7 @@ ul.multi-list {
 }
 
 .jobs-title-box {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 480px) {
@@ -14294,7 +14301,7 @@ ul.multi-list {
 #header-image-box h2 {
     font-size: 36px;
 	margin-bottom: 30px;
-	color:#fff;
+	color:black;
 	font-weight:700;
 }
 
@@ -14346,7 +14353,7 @@ ul.multi-list {
 
 #jobs-mission-box {
     margin: 0;
-    padding: 50px;
+    padding: 35px;
     background-color: #f1f1f1;
     display: block;
 }
@@ -14584,6 +14591,7 @@ ul.multi-list {
 #jobs-culture-container {
     background-color: #f1f1f1;
     padding: 60px 0;
+    padding-top: 33px;
 }
 
     #jobs-culture-container .rsDefaultInv .rsBullet.rsNavSelected span {
@@ -14619,6 +14627,36 @@ ul.multi-list {
 
     #jobs-culture-container .slider-image-cols .image-box.team-all {
         background:image-url("Banner-muctieu.jpg");
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+    #jobs-culture-container .slider-image-cols .image-box.team-dota {
+        background:image-url("bannerDota2.jpg");
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+    #jobs-culture-container .slider-image-cols .image-box.team-framgia-fc {
+        background:image-url("banner_fc.jpg");
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+    #jobs-culture-container .slider-image-cols .image-box.team-bia {
+        background:image-url("bia.jpg");
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+    #jobs-culture-container .slider-image-cols .image-box.team-lol {
+        background:image-url("LOL_banner.jpg");
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+    #jobs-culture-container .slider-image-cols .image-box.team-coc {
+        background:image-url("banner_COC2.jpg");
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+    #jobs-culture-container .slider-image-cols .image-box.team-aoe {
+        background:image-url("banner_aoe.jpg");
         background-position: 50% 50%;
         background-size: 100%;
     }
